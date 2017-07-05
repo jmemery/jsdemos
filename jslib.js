@@ -49,13 +49,13 @@ var _ = {
  }
 
  arr  = [1,2,3]
- console.log("************MAP****************")
+ console.log("MAP")
  console.log(_.map(arr, (num)=>{ return num * 3 }))
- console.log("************REDUCE****************")
+ console.log("REDUCE")
 console.log(_.reduce(arr, (memo, num)=>{ return memo + num; }, 0))
-console.log("************FIND****************")
+console.log("FIND")
 console.log(_.find([1, 2, 3, 4, 5, 6], (num)=>{ return num % 2 == 0; }) )
-console.log("************FILTER****************")
+console.log("FILTER")
 console.log(_.filter([1, 2, 3, 4, 5, 6], (num)=>{ return num % 2 == 0; }) )
-console.log("************REJECT****************")
+console.log("REJECT")
 console.log(_.reject([1, 2, 3, 4, 5, 6], (num)=>{ return num % 2 == 0; }) )
