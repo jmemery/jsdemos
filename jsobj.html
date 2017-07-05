@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    let users = {
+  employees: [
+      {'first_name':  'Miguel', 'last_name' : 'Jones'},
+      {'first_name' : 'Ernie', 'last_name' : 'Bertson'},
+      {'first_name' : 'Nora', 'last_name' : 'Lu'},
+      {'first_name' : 'Sally', 'last_name' : 'Barkyoumb'}
+  ],
+  managers: [
+     {'first_name' : 'Lillian', 'last_name' : 'Chambers'},
+     {'first_name' : 'Gordon', 'last_name' : 'Poe'}
+  ]
+};
+
+for(j in users){
+if(j == 'employees'){
+  console.log('EMPLOYEES');
+  for(let i = 0; i < users[j].length; i++){
+    console.log(i + ' - ' +  users[j][i].last_name +  ', ' + users[j][i].first_name +  ' - ' + (users[j][i].first_name.length + users[j][i].last_name.length))
+  }
+}
+ if(j == 'managers'){
+   console.log('Managers');
+   for(let i = 0; i < users[j].length; i++){
+    console.log(i + ' - ' +  users[j][i].last_name +  ', ' + users[j][i].first_name +  ' - ' + (users[j][i].first_name.length + users[j][i].last_name.length))
+  }
+}
+ }
+    </script>
+  </body>
+</html>
